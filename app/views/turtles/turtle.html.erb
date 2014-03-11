@@ -1,0 +1,11 @@
+<ul>
+<% @turtle.each do |turtle| %>
+  <li>
+    <div>
+      <p> <%= turtle["name"] %> </p>
+      <p> Weapon: <%= turtle["weapon"] %> </p>
+      <p> <img src="<%= turtle["image_url"] %>"> </p>
+    </div>
+  </li>
+<% end %>
+</ul>

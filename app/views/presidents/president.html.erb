@@ -1,0 +1,11 @@
+<ul>
+<% @president.each do |president| %>
+  <li>
+    <div>
+      <p> <%= president["first"] %> <%= president["last"] %> </p>
+      <p> term: <%= president["term-start"] %> - <%= president["term-end"] %></p>
+      <p> <img src="<%= president["image_url"] %>"> </p>
+    </div>
+  </li>
+<% end %>
+</ul>

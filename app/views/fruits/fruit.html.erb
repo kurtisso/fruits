@@ -1,0 +1,10 @@
+<ul>
+<% @fruit.each do |fruit| %>
+  <li>
+    <div>
+      <p> <%= fruit["name"] %> </p>
+      <p> <img src="<%= fruit["image_url"] %>"> </p>
+    </div>
+  </li>
+<% end %>
+</ul>
